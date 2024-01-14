@@ -6,7 +6,7 @@ const MainRoutes = () => {
     return (
         <div>
             <div ><Navbar></Navbar></div>
-            <Outlet></Outlet>
+                  <Outlet></Outlet>
         </div>
     );
 };

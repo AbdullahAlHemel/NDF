@@ -8,12 +8,17 @@ import {
 import MainRoutes from './MainRoutes';
 import About from './Components/About/About';
 import Aggregator from './Components/Aggregator/Aggregator';
+import Home from './Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainRoutes></MainRoutes>,
     children: [
+      {
+        path: '/about',
+        element: <Home></Home>
+      },
       {
         path: '/about',
         element: <About></About>
